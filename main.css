@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Mono&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+body {
+  font-family: 'Red Hat Mono', monospace;
+  background-color: #ff6f3c;
+  color: #ffffff;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  width: 70vw;
+  border-radius: 10px;
+  background: linear-gradient(to top right, #ffc93c, #ff9a3c);
+  box-shadow: 0 0 0 0.5rem lightgoldenrodyellow;
+}
+
+header {
+  text-align: center;
+  font-size: 4vh;
+  margin-top: 1vh;
+  margin-bottom: 5vh;
+}
+
+h2,
+h3 {
+  text-align: center;
+  margin: 2vh;
+}
+
+ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  margin: 1vh;
+}
+
+footer section {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 5vh;
+  margin-left: 80vw;
+}
+
+footer img {
+  height: 50px;
+  width: 50px;
+  margin-left: 1vw;
+}
+
+#playersGuess {
+  height: 12vh;
+  width: 200px;
+  font-size: 1rem;
+  border-radius: 5px;
+  margin: 2vh;
+  text-align: center;
+  border: none;
+  align-self: center;
+  box-shadow: 5px 3px 3px lightgray;
+}
+
+/* turns off number arrows for Chrome, Safari, Edge, Opera*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* turns off number arrows for FireFox*/
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+button {
+  border-radius: 5px;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  border: none;
+  align-self: center;
+  color: white;
+  box-shadow: 5px 3px 3px lightgray;
+}
+
+button:hover {
+  box-shadow: 5px 3px 3px black;
+}
+
+button:active {
+  transform: translateY(0.5vh);
+}
+
+#submit {
+  background-color: #6d42c7;
+  font-size: 4vh;
+  width: auto;
+  margin: 1vh;
+  margin-bottom: 3vh;
+}
+
+#extraButtons {
+  align-self: center;
+  margin: 1vh;
+}
+
+#reset {
+  background-color: #42b883;
+  font-size: 3vh;
+  width: auto;
+  margin: 1vh;
+}
+
+#hint {
+  background-color: #8aacff;
+  font-size: 3vh;
+  width: auto;
+  margin: 1vh;
+}

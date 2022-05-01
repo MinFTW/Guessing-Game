@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guessing Game</title>
+    <link rel="stylesheet" href="main.css" />
+    <script src="app.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Guessing Game</h1>
+    </header>
+
+    <main>
+      <h2 id="message">Guess a number between 1 - 100</h2>
+      <h2 id="subMessage">Then press submit</h2>
+
+      <input
+        type="number"
+        name="guess"
+        id="playersGuess"
+        min="1"
+        max="100"
+        placeholder="Enter guess"
+      />
+
+      <button id="submit" type="submit">Submit</button>
+
+      <section>
+        <h3>Guesses Left: <span id="guessesLeft">5</span></h3>
+        <h3>Previous Guesses</h3>
+        <ul id="guessList">
+          <li id="guess0">-</li>
+          <li id="guess1">-</li>
+          <li id="guess2">-</li>
+          <li id="guess3">-</li>
+        </ul>
+      </section>
+
+      <section id="extraButtons">
+        <button id="reset" type="reset">Reset</button>
+        <button id="hint">Hint</button>
+      </section>
+    </main>
+
+    <footer>
+      <section>
+        <h4>Project by Minsung</h4>
+        <a href="https://github.com/MinFTW/Guessing-Game" target="_blank">
+          <img
+            src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
+            alt="GitHub"
+          />
+        </a>
+      </section>
+    </footer>
+  </body>
+</html>
